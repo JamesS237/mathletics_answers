@@ -1,15 +1,23 @@
 {
   "manifest_version": 2,
 
-  "name":           "Chrome WebRequest Test",
-  "version":        "1.0.0",
+  "name": "Mathletics Answers",
+  "version": "1.0.0",
 
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+       "background.js",
+       "purl.js",
+       "fetch.js",
+       "jquery-1.11.1.js",
+       "desktop-notify-min.js"
+     ]
   },
 
   "permissions": [
     "webRequest",
-    "<all_urls>"
+    "http://west.cdn.mathletics.com/*",
+    "notifications",
+    "webRequestBlocking"
   ]
 }
